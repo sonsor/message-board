@@ -1,6 +1,6 @@
 import React, { lazy } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { Layout } from 'antd';
+import {Main} from "../layout/main";
 
 const Posts = lazy(() => import('../pages/posts'))
 
@@ -8,9 +8,9 @@ const AppRoute = () => {
 
     return (
         <Switch>
-            <Layout>
+            <Main>
                 <Route path="/" exact component={Posts} />
-            </Layout>
+            </Main>
         </Switch>
     );
 };

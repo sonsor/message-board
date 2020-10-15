@@ -6,8 +6,8 @@ import {PostList} from "../components/PostList";
 import {Loading} from "../components/Loading";
 import {PostDetail} from "../components/PostDetail";
 import {Notification} from "../components/Notification";
+import {Helmet} from "react-helmet";
 
-const { Header, Content } = Layout
 
 const Posts = () => {
 
@@ -35,12 +35,12 @@ const Posts = () => {
 
     return (
         <Fragment>
-            <Header>Posts</Header>
-            <Content style={{ padding: '0 50px' }}>
-                {loading && <Loading />}
-                {error && <Notification content='There was an error fetching posts' />}
-                {!loading && <PostList data={data} onSelect={onSelect} />}
-            </Content>
+            <Helmet>
+                <title>Posts</title>
+            </Helmet>
+            {loading && <Loading />}
+            {error && <Notification content='There was an error fetching posts' />}
+            {!loading && <PostList data={data} onSelect={onSelect} />}
             {selected && <PostDetail  id={selected} onClose={onClose} />}
         </Fragment>
     )

@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a47a941c-3412-4cfd-b20d-1403ee9b6499" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Notification.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostComments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostComments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostDetail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/posts/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/posts/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/posts/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/posts/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/AppRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/AppRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +33,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -64,29 +58,49 @@
       <workItem from="1602675990766" duration="7003000" />
       <workItem from="1602683128631" duration="7186000" />
       <workItem from="1602690982947" duration="7646000" />
-      <workItem from="1602733667747" duration="2175000" />
+      <workItem from="1602733667747" duration="3102000" />
     </task>
+    <task id="LOCAL-00001" summary="handle request errors and prop types">
+      <created>1602735866268</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602735866268</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="handle request errors and prop types" />
+    <option name="LAST_COMMIT_MESSAGE" value="handle request errors and prop types" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="283" width="912" height="492" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602676521858">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
     <state x="499" y="283" width="912" height="492" key="#com.intellij.fileTypes.FileTypeChooser/0.34.1920.984@0.34.1920.984" timestamp="1602676521858" />
+    <state x="248" y="34" width="1414" height="984" key="CommitChangelistDialog2" timestamp="1602735866032">
+      <screen x="0" y="34" width="1920" height="984" />
+    </state>
+    <state x="248" y="34" width="1414" height="984" key="CommitChangelistDialog2/0.34.1920.984@0.34.1920.984" timestamp="1602735866032" />
     <state x="590" y="118" width="730" height="823" key="FileChooserDialogImpl" timestamp="1602697540875">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
     <state x="590" y="118" width="730" height="823" key="FileChooserDialogImpl/0.34.1920.984@0.34.1920.984" timestamp="1602697540875" />
+    <state x="255" y="75" width="1400" height="909" key="Vcs.Push.Dialog.v2" timestamp="1602735869076">
+      <screen x="0" y="34" width="1920" height="984" />
+    </state>
+    <state x="255" y="75" width="1400" height="909" key="Vcs.Push.Dialog.v2/0.34.1920.984@0.34.1920.984" timestamp="1602735869076" />
     <state x="369" y="82" width="1182" height="888" key="find.popup" timestamp="1602735212595">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
     <state x="369" y="82" width="1182" height="888" key="find.popup/0.34.1920.984@0.34.1920.984" timestamp="1602735212595" />
-    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup" timestamp="1602735816382">
+    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup" timestamp="1602736706698">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
-    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup/0.34.1920.984@0.34.1920.984" timestamp="1602735816382" />
+    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup/0.34.1920.984@0.34.1920.984" timestamp="1602736706698" />
   </component>
 </project>
