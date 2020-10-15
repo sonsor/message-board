@@ -37,3 +37,15 @@ export const getPostComments = id =>
             return post.has('comments') ? post.get('comments').toJS(): []
         }
     )
+
+export const getPostsError = () =>
+    createSelector(
+        PostsSelector(),
+        state => Boolean(state.get('error'))
+    )
+
+export const getPostCommentsError = () =>
+    createSelector(
+        PostsSelector(),
+        state => Boolean(state.get('commentError'))
+    )

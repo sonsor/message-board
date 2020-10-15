@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a47a941c-3412-4cfd-b20d-1403ee9b6499" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Notification.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostComments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostComments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostDetail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/posts/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/posts/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/posts/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/posts/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/selectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +63,8 @@
       <updated>1602675988973</updated>
       <workItem from="1602675990766" duration="7003000" />
       <workItem from="1602683128631" duration="7186000" />
-      <workItem from="1602690982947" duration="6616000" />
+      <workItem from="1602690982947" duration="7646000" />
+      <workItem from="1602733667747" duration="2175000" />
     </task>
     <servers />
   </component>
@@ -72,13 +80,13 @@
       <screen x="0" y="34" width="1920" height="984" />
     </state>
     <state x="590" y="118" width="730" height="823" key="FileChooserDialogImpl/0.34.1920.984@0.34.1920.984" timestamp="1602697540875" />
-    <state x="369" y="82" width="1182" height="888" key="find.popup" timestamp="1602697584131">
+    <state x="369" y="82" width="1182" height="888" key="find.popup" timestamp="1602735212595">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
-    <state x="369" y="82" width="1182" height="888" key="find.popup/0.34.1920.984@0.34.1920.984" timestamp="1602697584131" />
-    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup" timestamp="1602697432514">
+    <state x="369" y="82" width="1182" height="888" key="find.popup/0.34.1920.984@0.34.1920.984" timestamp="1602735212595" />
+    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup" timestamp="1602735816382">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
-    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup/0.34.1920.984@0.34.1920.984" timestamp="1602697432514" />
+    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup/0.34.1920.984@0.34.1920.984" timestamp="1602735816382" />
   </component>
 </project>

@@ -3,6 +3,7 @@ import {useSelector} from "react-redux";
 import { Modal } from 'antd';
 import posts from '../modules/posts'
 import {PostComments} from "./PostComments";
+import {func, number} from "prop-types";
 
 export const PostDetail = ({ id, onClose }) => {
 
@@ -19,4 +20,9 @@ export const PostDetail = ({ id, onClose }) => {
             <PostComments id={id} />
         </Modal>
     )
+}
+
+PostDetail.propTypes = {
+    id: number.isRequired,
+    onClose: func
 }

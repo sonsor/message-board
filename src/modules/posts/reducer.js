@@ -24,5 +24,7 @@ export default createReducer(states.get('posts'), {
         let byId = state.get('byId')
         byId = byId.set('' + id, post)
         return state.set('byId', byId)
-    }
+    },
+    [constants.FETCH_POST_ERROR]: (state, { payload }) => state.set('error', payload),
+    [constants.FETCH_POST_COMMENT_ERROR]: (state, { payload }) => state.set('commentError', payload)
 })

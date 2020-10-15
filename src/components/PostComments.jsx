@@ -3,12 +3,15 @@ import { Button, Card } from "antd";
 import {useDispatch, useSelector} from "react-redux";
 import posts from '../modules/posts'
 import {Loading} from "./Loading";
+import {Notification} from "./Notification";
+import { number } from "prop-types";
 
 export const PostComments = ({ id }) => {
 
     const comments = useSelector(posts.selectors.getPostComments(id))
     const [show, setShow] = useState(false)
     const [loading, setLoading] = useState(false)
+    const error = useSelector(posts.selectors.getPostCommentsError())
     const dispatch = useDispatch()
 
     const toggle = () => {
@@ -29,6 +32,7 @@ export const PostComments = ({ id }) => {
         <Fragment>
             <Button onClick={toggle}>{show ? 'Hide': 'Show'} Comments</Button>
             {loading && <Loading/>}
+            {error && <Notification content="There was an error fetching post comment" />}
             {show && !loading &&
             <Card title="Comments">
                 {comments.map(comment => (
@@ -45,4 +49,8 @@ export const PostComments = ({ id }) => {
             }
         </Fragment>
     )
+}
+
+PostComments.propTypes = {
+    id: number.isRequired
 }

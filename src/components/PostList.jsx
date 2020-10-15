@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import {Card, Col, Divider, Row, Button} from "antd";
+import {array, func} from "prop-types";
 
 export const PostList = ({data, onSelect}) => {
     return (
@@ -21,4 +22,9 @@ export const PostList = ({data, onSelect}) => {
             ))}
         </Fragment>
     )
+}
+
+PostList.propTypes = {
+    data: array.isRequired,
+    onSelect: func
 }
