@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a47a941c-3412-4cfd-b20d-1403ee9b6499" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PostComments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostComments.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PostDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostDetail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/posts/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/posts/selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/posts/selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/post.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/post.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +59,8 @@
       <workItem from="1602683128631" duration="7186000" />
       <workItem from="1602690982947" duration="7646000" />
       <workItem from="1602733667747" duration="3230000" />
-      <workItem from="1602737708797" duration="1325000" />
+      <workItem from="1602737708797" duration="1425000" />
+      <workItem from="1602741987721" duration="496000" />
     </task>
     <task id="LOCAL-00001" summary="handle request errors and prop types">
       <created>1602735866268</created>
@@ -79,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602736785070</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add delete functionality">
+      <created>1602739047949</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1602739047949</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,25 +92,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="handle request errors and prop types" />
     <MESSAGE value="add page title and layouts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add page title and layouts" />
+    <MESSAGE value="add delete functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="add delete functionality" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="283" width="912" height="492" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602676521858">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
     <state x="499" y="283" width="912" height="492" key="#com.intellij.fileTypes.FileTypeChooser/0.34.1920.984@0.34.1920.984" timestamp="1602676521858" />
-    <state x="248" y="34" width="1414" height="984" key="CommitChangelistDialog2" timestamp="1602736784849">
+    <state x="248" y="34" width="1414" height="984" key="CommitChangelistDialog2" timestamp="1602739047598">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
-    <state x="248" y="34" width="1414" height="984" key="CommitChangelistDialog2/0.34.1920.984@0.34.1920.984" timestamp="1602736784849" />
-    <state x="590" y="118" width="730" height="823" key="FileChooserDialogImpl" timestamp="1602736896785">
+    <state x="248" y="34" width="1414" height="984" key="CommitChangelistDialog2/0.34.1920.984@0.34.1920.984" timestamp="1602739047598" />
+    <state x="590" y="118" width="730" height="823" key="FileChooserDialogImpl" timestamp="1602739132409">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
-    <state x="590" y="118" width="730" height="823" key="FileChooserDialogImpl/0.34.1920.984@0.34.1920.984" timestamp="1602736896785" />
-    <state x="255" y="75" width="1400" height="909" key="Vcs.Push.Dialog.v2" timestamp="1602736803577">
+    <state x="590" y="118" width="730" height="823" key="FileChooserDialogImpl/0.34.1920.984@0.34.1920.984" timestamp="1602739132409" />
+    <state x="255" y="75" width="1400" height="909" key="Vcs.Push.Dialog.v2" timestamp="1602739050216">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
-    <state x="255" y="75" width="1400" height="909" key="Vcs.Push.Dialog.v2/0.34.1920.984@0.34.1920.984" timestamp="1602736803577" />
+    <state x="255" y="75" width="1400" height="909" key="Vcs.Push.Dialog.v2/0.34.1920.984@0.34.1920.984" timestamp="1602739050216" />
     <state x="369" y="82" width="1182" height="888" key="find.popup" timestamp="1602735212595">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
@@ -115,9 +120,9 @@
       <screen x="0" y="34" width="1920" height="984" />
     </state>
     <state x="371" y="226" key="run.anything.popup/0.34.1920.984@0.34.1920.984" timestamp="1602738995907" />
-    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup" timestamp="1602739002638">
+    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup" timestamp="1602742435952">
       <screen x="0" y="34" width="1920" height="984" />
     </state>
-    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup/0.34.1920.984@0.34.1920.984" timestamp="1602739002638" />
+    <state x="369" y="34" width="1186" height="980" key="search.everywhere.popup/0.34.1920.984@0.34.1920.984" timestamp="1602742435952" />
   </component>
 </project>

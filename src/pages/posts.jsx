@@ -17,11 +17,15 @@ const Posts = () => {
     const dispatch = useDispatch(posts.selector)
 
     useEffect(() => {
+        getPosts()
+    }, [dispatch])
+
+    const getPosts = () => {
         setLoading(true)
         dispatch(posts.actions.getPosts()).then(() => {
             setLoading(false)
         })
-    }, [dispatch])
+    }
 
     const onSelect = post => () => {
         setSelected(post.id)
@@ -29,6 +33,11 @@ const Posts = () => {
 
     const onClose = () => {
         setSelected(false)
+    }
+
+    const onRemove = () => {
+        setSelected(false)
+        getPosts()
     }
 
 
@@ -40,7 +49,7 @@ const Posts = () => {
             {loading && <Loading />}
             {error && <Notification content='There was an error fetching posts' />}
             {!loading && <PostList data={data} onSelect={onSelect} />}
-            <PostDetail  id={selected} onClose={onClose} />
+            <PostDetail  id={selected} onClose={onClose} onRemove={onRemove} />
         </Fragment>
     )
 }

@@ -9,6 +9,7 @@ const setFetchPostError = createAction(constants.FETCH_POST_ERROR)
 const setFetchPostCommentsError = createAction(constants.FETCH_POST_COMMENT_ERROR)
 
 export const getPosts = () => async dispatch => {
+    dispatch(updatePosts([]))
     dispatch(setFetchPostError(false))
     try {
         const posts = await services.get('posts').all()
@@ -35,7 +36,6 @@ export const getPostComments = id => async dispatch => {
 export const removePost = id => async dispatch => {
     try {
         await services.get('posts').remove(id)
-        dispatch(getPosts())
     } catch (e) {
         // nothing to do
     }

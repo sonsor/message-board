@@ -3,9 +3,9 @@ import {useSelector} from "react-redux";
 import { Modal } from 'antd';
 import posts from '../modules/posts'
 import {PostComments} from "./PostComments";
-import {func, number} from "prop-types";
+import {bool, func, number, oneOf, oneOfType} from "prop-types";
 
-export const PostDetail = ({ id, onClose }) => {
+export const PostDetail = ({ id, onClose, onRemove }) => {
 
     const post = useSelector(posts.selectors.getPost(id))
 
@@ -17,12 +17,13 @@ export const PostDetail = ({ id, onClose }) => {
             onCancel={onClose}
         >
             <p>{post.body}</p>
-            <PostComments id={id} onRemove={onClose} />
+            <PostComments id={id} onRemove={onRemove} />
         </Modal>
     )
 }
 
 PostDetail.propTypes = {
-    id: number.isRequired,
-    onClose: func
+    id: oneOfType([number, bool]).isRequired,
+    onClose: func,
+    onRemove: func
 }
