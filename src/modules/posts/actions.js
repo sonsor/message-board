@@ -31,3 +31,12 @@ export const getPostComments = id => async dispatch => {
         dispatch(setFetchPostCommentsError(true))
     }
 }
+
+export const removePost = id => async dispatch => {
+    try {
+        await services.get('posts').remove(id)
+        dispatch(getPosts())
+    } catch (e) {
+        // nothing to do
+    }
+}

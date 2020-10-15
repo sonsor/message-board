@@ -12,12 +12,12 @@ export const PostDetail = ({ id, onClose }) => {
     return (
         <Modal
             title={post.title}
-            visible={true}
+            visible={id ? true: false}
             onOk={onClose}
             onCancel={onClose}
         >
             <p>{post.body}</p>
-            <PostComments id={id} />
+            <PostComments id={id} onRemove={onClose} />
         </Modal>
     )
 }

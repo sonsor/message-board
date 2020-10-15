@@ -1,5 +1,4 @@
 import React, {Fragment, useEffect, useState} from "react";
-import { Layout } from 'antd';
 import {useDispatch, useSelector} from "react-redux";
 import posts from '../modules/posts'
 import {PostList} from "../components/PostList";
@@ -41,7 +40,7 @@ const Posts = () => {
             {loading && <Loading />}
             {error && <Notification content='There was an error fetching posts' />}
             {!loading && <PostList data={data} onSelect={onSelect} />}
-            {selected && <PostDetail  id={selected} onClose={onClose} />}
+            <PostDetail  id={selected} onClose={onClose} />
         </Fragment>
     )
 }

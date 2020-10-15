@@ -16,4 +16,10 @@ export class PostService {
         return data
     }
 
+    async remove(id) {
+        const url = `${this.config.api.url}/posts/${id}`
+        const { data } = await this.http.delete(url)
+        return data
+    }
+
 }

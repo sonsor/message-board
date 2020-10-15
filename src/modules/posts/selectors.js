@@ -26,16 +26,19 @@ export const getPosts = () =>
 export const getPost = id =>
     createSelector(
         PostsSelector(),
-        state => state.get('byId').get('' + id, {}).toJS()
+        state => {
+            const posts  = state.get('byId')
+            if (!posts.has('' + id)) {
+                return {}
+            }
+            return posts.get('' + id, {}).toJS()
+        }
     )
 
 export const getPostComments = id =>
     createSelector(
-        PostsSelector(),
-        state => {
-            const post = state.get('byId').get('' + id)
-            return post.has('comments') ? post.get('comments').toJS(): []
-        }
+        getPost(id),
+        state => state?.comments ?? []
     )
 
 export const getPostsError = () =>

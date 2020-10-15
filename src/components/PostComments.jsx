@@ -1,12 +1,12 @@
-import React, { Fragment, useState } from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import { Button, Card } from "antd";
 import {useDispatch, useSelector} from "react-redux";
 import posts from '../modules/posts'
 import {Loading} from "./Loading";
 import {Notification} from "./Notification";
-import { number } from "prop-types";
+import { number, func } from "prop-types";
 
-export const PostComments = ({ id }) => {
+export const PostComments = ({ id, onRemove }) => {
 
     const comments = useSelector(posts.selectors.getPostComments(id))
     const [show, setShow] = useState(false)
@@ -14,23 +14,41 @@ export const PostComments = ({ id }) => {
     const error = useSelector(posts.selectors.getPostCommentsError())
     const dispatch = useDispatch()
 
+    useEffect(() => {
+        setShow(false)
+    }, [id])
+
+    const getPostComments = () => {
+        setLoading(true)
+        dispatch(posts.actions.getPostComments(id)).then(() => {
+            setLoading(false)
+        })
+    }
+
+
     const toggle = () => {
         if (!show) {
-            setLoading(true)
-            dispatch(posts.actions.getPostComments(id)).then(() => {
-                setLoading(false)
-            })
+            getPostComments()
         } else {
             setLoading(false)
         }
         setShow(!show)
     }
 
+    const remove = () => {
+        setLoading(true)
+        dispatch(posts.actions.removePost(id)).then(() => {
+            setLoading(false)
+            onRemove()
+        })
+    }
+
 
 
     return (
         <Fragment>
-            <Button onClick={toggle}>{show ? 'Hide': 'Show'} Comments</Button>
+            <Button onClick={toggle} disabled={loading}>{show ? 'Hide': 'Show'} Comments</Button>
+            <Button onClick={remove} disabled={loading}>Delete</Button>
             {loading && <Loading/>}
             {error && <Notification content="There was an error fetching post comment" />}
             {show && !loading &&
@@ -52,5 +70,6 @@ export const PostComments = ({ id }) => {
 }
 
 PostComments.propTypes = {
-    id: number.isRequired
+    id: number.isRequired,
+    onRemove: func
 }
